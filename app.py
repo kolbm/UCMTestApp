@@ -2,7 +2,7 @@ import streamlit as st
 import math
 
 def main():
-    st.image("https://raw.githubusercontent.com/kolbm/UCMTestApp/main/Image%20Edits.png", use_column_width=True)
+    st.image("https://raw.githubusercontent.com/kolbm/UCMTestApp/main/Image%20Edits.png", use_container_width=True)
     st.title("Uniform Circular Motion Formula Selector")
     st.write("Select the type of problem and enter the given values. The app will suggest the correct formula.")
 

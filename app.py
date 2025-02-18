@@ -14,7 +14,7 @@ def main():
 
     if problem_type == "Period & Frequency":
         st.subheader("Period & Frequency Calculator")
-        st.latex("T = \frac{t}{n}, \quad f = \frac{1}{T}")
+        st.latex(r"T = \frac{t}{n}, \quad f = \frac{1}{T}")
         given = st.radio("What is given?", ["Time for multiple cycles", "Frequency", "Period"])
         
         if given == "Time for multiple cycles":
@@ -37,7 +37,7 @@ def main():
 
     elif problem_type == "Angular & Tangential Velocity":
         st.subheader("Angular & Tangential Velocity Calculator")
-        st.latex("\omega = \frac{2\pi}{T}, \quad v = \omega r")
+        st.latex(r"\omega = \frac{2\pi}{T}, \quad v = \omega r")
         r = st.number_input("Radius (m):", min_value=0.01, value=2.0)
         given = st.radio("What is given?", ["Period", "Frequency", "Angular Velocity"])
         
@@ -61,7 +61,7 @@ def main():
 
     elif problem_type == "Centripetal Acceleration":
         st.subheader("Centripetal Acceleration Calculator")
-        st.latex("a_c = \frac{v^2}{r}")
+        st.latex(r"a_c = \frac{v^2}{r}")
         given = st.radio("What is given?", ["Velocity & Radius", "Acceleration & Radius"])
         
         if given == "Velocity & Radius":
@@ -79,7 +79,7 @@ def main():
 
     elif problem_type == "Centripetal Force":
         st.subheader("Centripetal Force Calculator")
-        st.latex("F_c = \frac{m v^2}{r}")
+        st.latex(r"F_c = \frac{m v^2}{r}")
         given = st.radio("What is given?", ["Mass, Velocity & Radius", "Force & Mass"])
         
         if given == "Mass, Velocity & Radius":
